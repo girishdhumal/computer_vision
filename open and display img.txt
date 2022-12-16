@@ -1,0 +1,4 @@
+#3a open and display img
+from PIL import Image
+img=Image.open("picture.jpg")
+img.show()

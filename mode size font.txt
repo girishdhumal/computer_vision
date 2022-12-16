@@ -1,0 +1,7 @@
+#3b mode size font
+from PIL import Image
+img= Image.open("picture.jpg")
+img_data = img.getdata()
+print(img_data)
+print(img.size)
+print(type(img))

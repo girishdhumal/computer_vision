@@ -1,0 +1,12 @@
+#3d resize using pill
+from PIL import Image
+im = Image.open("picture.jpg")
+#width, height = im.size
+#left = 6
+#top = height / 4
+#right = 174
+#bottom = 3 * height / 4
+#im1 = im.crop((left, top, right, bottom))
+newsize = (200, 200)
+im1 = im.resize(newsize)
+im1.show()

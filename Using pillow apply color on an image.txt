@@ -1,0 +1,8 @@
+#4c use color
+from PIL import Image, ImageColor
+from PIL import Image
+img=Image.open('picture.jpg')
+img=ImageColor.getrgb("BLUE")
+img1=ImageColor.getrgb("PURPLE")
+img.show()
+img1.show()

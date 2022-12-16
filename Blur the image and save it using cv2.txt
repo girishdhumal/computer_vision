@@ -1,0 +1,6 @@
+import cv2
+img = cv2.imread('a.jpeg')
+img_rst= cv2.blur(img,(5,5))
+cv2.imshow("blurred",img_rst)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

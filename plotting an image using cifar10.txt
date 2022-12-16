@@ -1,0 +1,10 @@
+#2a plotting an image using cifar10
+from __future__ import print_function
+from keras.datasets import cifar10
+import matplotlib.pyplot as plt
+(x_train,y_train),(x_test,y_test)=cifar10.load_data()
+labels=['airplane','bird','automobile','cat','dog','deer','frog','horse','ship','truck']
+print(x_train.shape,y_train.shape)
+idx=2000
+print(labels[y_train[idx][0]])
+plt.imshow(x_train[idx])

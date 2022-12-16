@@ -1,0 +1,8 @@
+import cv2
+img=cv2.imread('a.jpeg')
+pos=(10,15)
+cv2.putText(img, 'shantanu',(120,25),cv2.FONT_HERSHEY_SIMPLEX,1,(60,60,60),2)
+cv2.imwrite(r'abc.jpg',img)
+cv2.imshow('t',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows

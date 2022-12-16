@@ -1,0 +1,12 @@
+import cv2
+
+img1 = cv2.imread('test4.jpeg')
+cv2.imshow('og',img1)
+img2 = cv2.imread('a.jpeg')
+a1 = cv2.resize(img1,(300,200))
+b1 = cv2.resize(img2,(300,200))
+dst = cv2.addWeighted(a1, 0.5, b1, 0.5, 0)
+cv2.imshow('image', dst)
+cv2.imwrite(r'mixed.jpg', dst)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

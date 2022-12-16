@@ -1,0 +1,6 @@
+#4d crop using pill
+from PIL import Image
+img=Image.open("picture.jpg")
+crop=img.crop(10,50,200,300)
+crop.show()
+crop.save('cropedimg',crop)

@@ -1,0 +1,9 @@
+#4g gaussian blur
+from scipy import ndimage
+import matplotlib.pyplot as plt
+from PIL import Image
+img=Image.open('picture.jpg')
+img.show()
+im_blur= ndimage.gaussian_filter(img,4)
+plt.imshow(im_blur,plt.cm.gray)
+plt.show()
