@@ -1,5 +1,0 @@
-#3c rotate using pill
-from PIL import Image
-img=Image.open("picture.jpg")
-rotate= img.rotate(40)
-rotate.show()
